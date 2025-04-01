@@ -1,20 +1,30 @@
 public class ArrayM
 {
-	private int[] Array;
-	public ArrayM(int[] Array)
+	private int[] a;
+	public ArrayM(int[] a)
 	{
-		this.Array = Array;
+		this.a = a;
 	}
 
 	public String showArray()
 	{
 		String output = "[";
-		for(int i=0; i<Array.length; i++)
+		for(int i=0; i<a.length; i++)
 		{
-			output+=Array[i];
+			output+=a[i];
 			output+="|";
 		}
 		output+="]";
 		return output;
+	}
+	public int addArray()
+	{
+		int sum = 0;
+		for(int i =0; i<a.length; i++)
+		{
+			sum+=a[i];
+		}
+		return sum;
+
 	}
 }
