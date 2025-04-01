@@ -27,4 +27,15 @@ public class ArrayM
 		return sum;
 
 	}
+	public boolean createTemporary()
+	{
+		boolean doneTemp = false;
+		int[] temp = new int[a.length];
+		for(int i =0; i<a.length; i++)
+		{
+			temp[i] = a[i];
+			doneTemp=true;
+		}
+		return doneTemp;
+	}
 }

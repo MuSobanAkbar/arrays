@@ -6,5 +6,6 @@ public class ArrayMDriver
 		ArrayM testA = new ArrayM(test);
 		System.out.print(testA.showArray());
 		System.out.println("The sum of the array: " + testA.addArray());
+		System.out.println(testA.createTemporary());
 	}
 }
